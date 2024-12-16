@@ -1,12 +1,26 @@
 import tkinter as tk
 import cantools
 import can
-import random
 import threading
 import time
 from tkinter import messagebox
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 import queue
+
+
+##INSTALL ALL LIBRARIES, KVASER SDK AND INFLUXDB. 
+
+
+
+##1 INFLUXDB -> wget https://download.influxdata.com/influxdb/releases/influxdb2-2.7.11-windows.zip -UseBasicParsing -OutFile influxdb2-2.7.11-windows.zip
+#Expand-Archive .\influxdb2-2.7.11-windows.zip -DestinationPath 'C:\Program Files\InfluxData\influxdb\'
+
+##2 INFLUXDB -> CD TO INSTALL LOCATION AND THEN INFLUXD TO RUN
+##3 SETUP CORRECT INFLUXDB CRED AND TEST WITH CANKING
+
+
+
+
 
 class DynoDashboardApp:
     def __init__(self, root):
@@ -18,7 +32,6 @@ class DynoDashboardApp:
         self.message_count = 0
         self.log_queue = queue.Queue()
 
-        # Load DBC files
         try:
             self.sensor_dbc = cantools.database.load_file("./dbcbackupedited/can1_HPF24.dbc")
             self.critical_dbc = cantools.database.load_file("./dbcbackupedited/can2-HPF24.dbc")
@@ -31,22 +44,20 @@ class DynoDashboardApp:
             messagebox.showerror("Error", f"Error loading DBC file: {e}")
             self.root.quit()
 
-        # Initialize Kvaser CAN buses
+        #Initialize CAN bus for Kvaser devices (can1 for sensor, can2 for critical)
         try:
             self.bus1 = can.interface.Bus(channel=0, interface='kvaser')  # Sensor CAN bus using Kvaser device
             self.bus2 = can.interface.Bus(channel=1, interface='kvaser')  # Critical CAN bus using Kvaser device
-            # Critical CAN bus using Kvaser device
-            print("Kvaser CAN buses initialized successfully.")
         except can.CanError as e:
-            print(f"Error initializing Kvaser CAN buses: {e}")
-            messagebox.showerror("Error", f"Error initializing Kvaser CAN buses: {e}")
+            print(f"Error initializing Kvaser CAN bus: {e}")
+            messagebox.showerror("Error", f"Error initializing CAN bus: {e}")
             self.root.quit()
 
-        # Connect to InfluxDB
+        # Connect to database (ensure correct info is used)
         try:
             self.influxdb_client = InfluxDBClient(
                 url="http://localhost:8086",
-                token="your_influxdb_token",
+                token="2o82E0x2SAV-vcb-2tPpNhfsE5XItn_qU8VDNcg--r9DeHHYqSZP8wWCFaaYsnfPOkx-uRuxNqzvg-hEpQwLVw==",
                 org="metropolia"
             )
             self.bucket = "dyno_data"
@@ -121,8 +132,8 @@ class DynoDashboardApp:
 
         self.is_running = True
         self.message_count = 0
-        threading.Thread(target=self.simulate_can_data, daemon=True).start()  # Run CAN simulation in background
-        threading.Thread(target=self.update_log, daemon=True).start()  # Separate thread to handle UI updates
+        threading.Thread(target=self.read_can_data, daemon=True).start()  # Use real CAN data from Kvaser
+        threading.Thread(target=self.update_log, daemon=True).start()  # Separate thread for UI updates
 
     def stop_logging(self):
         self.start_button.config(state=tk.NORMAL)
@@ -130,19 +141,25 @@ class DynoDashboardApp:
         self.status_label.config(text="Status: Idle", fg="red")
         self.is_running = False
 
-    def simulate_can_data(self):
+    def read_can_data(self):
         batch_data = []  # To accumulate data for batch writing
 
         while self.is_running:
-            # Simulate a CAN message with a random message ID and random data
-            message_id = random.choice(list(self.valid_message_ids))  # Pick a random valid message ID
-            data = [random.randint(0, 255) for _ in range(8)]  # Generate 8 random bytes for the message data
+            # Read a message from the Kvaser CAN bus (can1 and can2)
+            message1 = self.bus1.recv()  # Sensor CAN bus message
+            message2 = self.bus2.recv()  # Critical CAN bus message
 
-            # Process the simulated message
-            decoded_data = self.decode_can_message(message_id, data)
-            if decoded_data:
-                self.log_queue.put(f"Decoded data for message ID {message_id}: {decoded_data}")
-                batch_data.append((message_id, decoded_data))
+            if message1:
+                decoded_data1 = self.decode_can_message(message1.arbitration_id, message1.data)
+                if decoded_data1:
+                    self.log_queue.put(f"Decoded data for message ID {message1.arbitration_id}: {decoded_data1}")
+                    batch_data.append((message1.arbitration_id, decoded_data1))
+
+            if message2:
+                decoded_data2 = self.decode_can_message(message2.arbitration_id, message2.data)
+                if decoded_data2:
+                    self.log_queue.put(f"Decoded data for message ID {message2.arbitration_id}: {decoded_data2}")
+                    batch_data.append((message2.arbitration_id, decoded_data2))
 
             # Write to InfluxDB if we have data
             if batch_data:
@@ -152,8 +169,8 @@ class DynoDashboardApp:
             self.message_count += 1
             self.update_status(self.message_count)
 
-            # Sleep for a while before generating the next simulated message
-            time.sleep(0.1)  # Simulate message generation every 100ms
+            # Sleep for a while before fetching next message
+            time.sleep(0.1)  # Adjust the sleep time as needed for the reading frequency
 
     def decode_can_message(self, message_id, data):
         decoded_signals = {}
