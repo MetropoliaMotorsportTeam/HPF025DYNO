@@ -1,8 +1,10 @@
 import tkinter as tk
+from datetime import datetime
 import cantools
 import can
 import threading
 import time
+import csv
 from tkinter import messagebox
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 import queue
@@ -10,22 +12,22 @@ import queue
 
 ##INSTALL ALL LIBRARIES, KVASER SDK AND INFLUXDB. 
 
-
-
-##1 INFLUXDB -> wget https://download.influxdata.com/influxdb/releases/influxdb2-2.7.11-windows.zip -UseBasicParsing -OutFile influxdb2-2.7.11-windows.zip
+##1 INFLUXDB (Windows) -> wget https://download.influxdata.com/influxdb/releases/influxdb2-2.7.11-windows.zip -UseBasicParsing -OutFile influxdb2-2.7.11-windows.zip
 #Expand-Archive .\influxdb2-2.7.11-windows.zip -DestinationPath 'C:\Program Files\InfluxData\influxdb\'
 
-##2 INFLUXDB -> CD TO INSTALL LOCATION AND THEN INFLUXD TO RUN
+##2 INFLUXD -> CD TO INSTALL LOCATION AND THEN INFLUXD TO RUN
 ##3 SETUP CORRECT INFLUXDB CRED AND TEST WITH CANKING
 
+##CAN2 DBC ERROR, SIGNAL DOESNT FIT BTN1
 
 
+##MESSAGE2, CAN2 DBC FILE IS NOT USED NOW SINCE WE ARE TESTING WITH 1 DBC FILE. (SENSOR)
 
 
-class DynoDashboardApp:
+class DynoLogger:
     def __init__(self, root):
         self.root = root
-        self.root.title("Dyno Dashboard")
+        self.root.title("Dyno Logger")
         self.root.geometry("600x500")
         self.root.config(bg="#f4f4f9")
         self.is_running = False
@@ -33,7 +35,7 @@ class DynoDashboardApp:
         self.log_queue = queue.Queue()
 
         try:
-            self.sensor_dbc = cantools.database.load_file("./dbcbackupedited/can1_HPF24.dbc")
+            self.sensor_dbc = cantools.database.load_file("can1_HPF24.dbc")
             self.critical_dbc = cantools.database.load_file("./dbcbackupedited/can2-HPF24.dbc")
             print("Both DBC files loaded successfully.")
             self.print_dbc_signals()
@@ -44,23 +46,26 @@ class DynoDashboardApp:
             messagebox.showerror("Error", f"Error loading DBC file: {e}")
             self.root.quit()
 
-        #Initialize CAN bus for Kvaser devices (can1 for sensor, can2 for critical)
+
+
+ 
         try:
-            self.bus1 = can.interface.Bus(channel=0, interface='kvaser')  # Sensor CAN bus using Kvaser device
-            self.bus2 = can.interface.Bus(channel=1, interface='kvaser')  # Critical CAN bus using Kvaser device
+            self.bus1 = can.interface.Bus(channel=0, interface='kvaser', bitrate=1000000)   # Sensor CAN bus using Kvaser device
+            ##self.bus2 = can.interface.Bus(channel=1, interface='kvaser')  # Critical CAN bus using Kvaser device
         except can.CanError as e:
             print(f"Error initializing Kvaser CAN bus: {e}")
             messagebox.showerror("Error", f"Error initializing CAN bus: {e}")
             self.root.quit()
 
-        # Connect to database (ensure correct info is used)
+        # Connect to database (ensure correct info is used) otherwise it wont work
         try:
             self.influxdb_client = InfluxDBClient(
                 url="http://localhost:8086",
-                token="2o82E0x2SAV-vcb-2tPpNhfsE5XItn_qU8VDNcg--r9DeHHYqSZP8wWCFaaYsnfPOkx-uRuxNqzvg-hEpQwLVw==",
-                org="metropolia"
+                token="tAapBTbBavsk8E_exG4t1BJyp0FefDkfty8XzBAVo-l41w8g4892Z06rv-fyeDggab2BI4C_dqhv42qMKCUHYA==",
+                org="motorsport"
             )
-            self.bucket = "dyno_data"
+            ##MAKE SURE YOU SET THIS TO THE CORRECT BUCKET.
+            self.bucket = "withoutui"
             print("Connected to InfluxDB successfully.")
         except Exception as e:
             print(f"Error connecting to InfluxDB: {e}")
@@ -92,11 +97,12 @@ class DynoDashboardApp:
                 for signal in message.signals:
                     print(f"  Signal Name: {signal.name}, Start Bit: {signal.start}, Length: {signal.length}")
 
+    ##UI 
     def setup_ui(self):
         frame = tk.Frame(self.root, bg="#f4f4f9")
         frame.pack(padx=20, pady=20, fill=tk.BOTH, expand=True)
 
-        title_label = tk.Label(frame, text="HPF025 Dyno", font=("Arial", 18, "bold"), bg="#f4f4f9", fg="#333")
+        title_label = tk.Label(frame, text="HPF025 Logger", font=("Arial", 18, "bold"), bg="#f4f4f9", fg="#333")
         title_label.pack(pady=10)
 
         log_frame = tk.Frame(frame, bg="#f4f4f9")
@@ -125,6 +131,9 @@ class DynoDashboardApp:
         self.status_label = tk.Label(frame, text="Status: Idle", font=("Arial", 12), bg="#f4f4f9", fg="red")
         self.status_label.pack(pady=10)
 
+
+
+    ##BUTTONS
     def start_logging(self):
         self.start_button.config(state=tk.DISABLED)
         self.stop_button.config(state=tk.NORMAL)
@@ -132,8 +141,8 @@ class DynoDashboardApp:
 
         self.is_running = True
         self.message_count = 0
-        threading.Thread(target=self.read_can_data, daemon=True).start()  # Use real CAN data from Kvaser
-        threading.Thread(target=self.update_log, daemon=True).start()  # Separate thread for UI updates
+        threading.Thread(target=self.read_can_data, daemon=True).start() 
+        ##threading.Thread(target=self.update_log, daemon=True).start()  
 
     def stop_logging(self):
         self.start_button.config(state=tk.NORMAL)
@@ -141,13 +150,16 @@ class DynoDashboardApp:
         self.status_label.config(text="Status: Idle", fg="red")
         self.is_running = False
 
+
+
+
     def read_can_data(self):
         batch_data = []  # To accumulate data for batch writing
 
         while self.is_running:
             # Read a message from the Kvaser CAN bus (can1 and can2)
             message1 = self.bus1.recv()  # Sensor CAN bus message
-            message2 = self.bus2.recv()  # Critical CAN bus message
+            #message2 = self.bus2.recv()  # Critical CAN bus message
 
             if message1:
                 decoded_data1 = self.decode_can_message(message1.arbitration_id, message1.data)
@@ -155,32 +167,40 @@ class DynoDashboardApp:
                     self.log_queue.put(f"Decoded data for message ID {message1.arbitration_id}: {decoded_data1}")
                     batch_data.append((message1.arbitration_id, decoded_data1))
 
-            if message2:
-                decoded_data2 = self.decode_can_message(message2.arbitration_id, message2.data)
-                if decoded_data2:
-                    self.log_queue.put(f"Decoded data for message ID {message2.arbitration_id}: {decoded_data2}")
-                    batch_data.append((message2.arbitration_id, decoded_data2))
+            #if message2:
+                #decoded_data2 = self.decode_can_message(message2.arbitration_id, message2.data)
+                #if decoded_data2:
+                    #self.log_queue.put(f"Decoded data for message ID {message2.arbitration_id}: {decoded_data2}")
+                    #batch_data.append((message2.arbitration_id, decoded_data2))
 
             # Write to InfluxDB if we have data
             if batch_data:
-                self.write_to_influxdb(batch_data)
+                ##self.write_to_influxdb(batch_data)
+                self.write_to_csv(batch_data)
                 batch_data.clear()
 
             self.message_count += 1
             self.update_status(self.message_count)
 
-            # Sleep for a while before fetching next message
-            time.sleep(0.1)  # Adjust the sleep time as needed for the reading frequency
+            time.sleep(0.1)  
 
+
+
+    ##TEST
     def decode_can_message(self, message_id, data):
         decoded_signals = {}
-
         # Attempt to decode using both DBC files
         for dbc in [self.sensor_dbc, self.critical_dbc]:
             if dbc:
                 try:
                     message = dbc.get_message_by_frame_id(message_id)
                     raw_data = bytes(data)
+
+
+                    ##CHECK raw_data
+                    print(raw_data, message_id)
+
+
                     decoded_data = message.decode(raw_data)
                     decoded_signals.update(decoded_data)
                     break  # Stop after successful decoding
@@ -190,6 +210,9 @@ class DynoDashboardApp:
         if not decoded_signals:
             self.log_queue.put(f"Unknown message ID {message_id}, skipping.")
         return decoded_signals
+    
+
+
 
     def write_to_influxdb(self, batch_data):
         try:
@@ -200,35 +223,67 @@ class DynoDashboardApp:
                             .tag("message_id", message_id) \
                             .field(signal_name, signal_value) \
                             .time(time.time_ns(), WritePrecision.NS)
-                        write_api.write(bucket=self.bucket, org="metropolia", record=point)
+                        
+
+                        ##THIS NEEDS TO BE THE CORRECT ORG OTHERWISE IT WONT WORK
+                        write_api.write(bucket=self.bucket, org="motorsport", record=point)
+
+
                 self.log_queue.put("Batch write to InfluxDB successful.")
         except Exception as e:
             self.log_queue.put(f"Error writing to InfluxDB: {e}")
 
+
+    def write_to_csv(self, batch_data):
+        try:
+            with open('signals.csv', mode='a', newline='') as file:
+                writer = csv.writer(file)
+
+                if file.tell() == 0:
+                    # Header for the CSV file
+                    header = ["id", "signal_name", "signal_value", "timestamp"]
+                    writer.writerow(header)
+
+                for message_id, decoded_data in batch_data:
+                    for signal_name, signal_value in decoded_data.items():
+                        # Prepare the row to be written with a human-readable timestamp
+                        timestamp = datetime.now().isoformat()
+                        row = [message_id, signal_name, signal_value, timestamp]
+                        writer.writerow(row)
+
+                self.log_queue.put("Batch write to CSV successful.")
+        except Exception as e:
+            error_message = f"Error writing to CSV: {e}"
+            self.log_queue.put(error_message)
+            print(error_message)
+
+
+
+
     def log(self, message, level="INFO"):
         self.log_queue.put(f"[{level}] {message}\n")
+        
 
-    def update_log(self):
-        while self.is_running:
-            try:
-                message = self.log_queue.get(timeout=1)
-                self.update_log_text(message)
-            except queue.Empty:
-                continue
+    #def update_log(self):
+        #while self.is_running:
+            #try:
+                #message = self.log_queue.get(timeout=1)
+                #self.update_log_text(message)
+            #except queue.Empty:
+                #continue
 
-    def update_log_text(self, message):
-        self.log_text.config(state=tk.NORMAL)
-        self.log_text.insert(tk.END, message)
-        if len(self.log_text.get("1.0", tk.END).splitlines()) > 1000:
-            self.log_text.delete("1.0", "2.0")
-        self.log_text.yview(tk.END)
-        self.log_text.config(state=tk.DISABLED)
+    #def update_log_text(self, message):
+        #self.log_text.config(state=tk.NORMAL)
+        #self.log_text.insert(tk.END, message)
+        #if len(self.log_text.get("1.0", tk.END).splitlines()) > 1000:
+            #self.log_text.delete("1.0", "2.0")
+        #self.log_text.yview(tk.END)
+        #self.log_text.config(state=tk.DISABLED)
 
     def update_status(self, message_count):
         self.status_label.config(text=f"Status: Logging ({message_count} messages)", fg="green")
 
-
 if __name__ == "__main__":
     root = tk.Tk()
-    app = DynoDashboardApp(root)
+    app = DynoLogger(root)
     root.mainloop()
