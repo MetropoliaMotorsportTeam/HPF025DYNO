@@ -55,40 +55,40 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ _B1_Resp_Trigger_Mask : 0|16@0+ (1,0) [0|0] "" Vector__XXX
  SG_ _B9_Resp_Device_spare : 0|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Device_dc_link_vol_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_5 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_5 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_5 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_4 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_4 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_4 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_3 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_3 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_3 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_2 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_2 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_2 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_1 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_1 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_1 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_13 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_13 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_13 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_12 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_12 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_12 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_11 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_11 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_11 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_10 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_10 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_10 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_9 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_9 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_9 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_8 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_8 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_8 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Device_dc_link_vol_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_7 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_7 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_7 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Inverter_A_Statusword_5 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
  SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -654,54 +654,54 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ Motor_A_act_velocity_7 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
  SG_ Motor_A_act_torque_7 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
  SG_ Motor_A_act_current_7 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
- SG_ Motor_A_act_temp_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Motor_A_act_temp_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_5 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_5 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_5 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_5 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_4 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_4 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_4 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_4 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_3 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_3 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_3 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_3 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_2 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_2 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_2 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_2 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_1 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_1 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_1 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_1 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_13 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_13 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_13 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_13 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_12 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_12 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_12 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_12 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_11 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_11 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_11 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_11 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_10 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_10 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_10 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_10 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_9 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_9 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_9 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_9 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_8 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_8 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_8 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_A_act_temp_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_8 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_7 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_7 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_7 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_7 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Inverter_B_Statusword_5 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
  SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -847,6 +847,804 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ _B1_Resp_Trigger_Mask : 0|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _B9_Resp_Device_spare : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Device_dc_link_vol_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_5 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_5 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_4 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_4 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_3 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_3 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_2 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_2 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_1 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_1 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_13 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_13 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_12 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_12 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_11 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_11 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_10 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_10 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_9 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_9 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_8 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_8 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Device_dc_link_vol_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Device_ambient_temp_7 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Device_dc_link_power_7 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Inverter_A_Statusword_5 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_4 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_3 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_2 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_1 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_13 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_12 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_11 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_10 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_9 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_8 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_A_Statusword_7 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Motor_A_act_velocity_5 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_5 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_5 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_4 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_4 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_4 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_3 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_3 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_3 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_2 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_2 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_2 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_1 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_1 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_1 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_13 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_13 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_13 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_12 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_12 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_12 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_11 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_11 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_11 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_10 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_10 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_10 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_9 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_9 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_9 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_8 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_8 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_8 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_velocity_7 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
+ SG_ Motor_A_act_torque_7 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
+ SG_ Motor_A_act_current_7 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
+ SG_ Motor_A_act_temp_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_5 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_5 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_5 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_4 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_4 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_4 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_3 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_3 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_3 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_2 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_2 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_2 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_1 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_1 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_1 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_13 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_13 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_13 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_12 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_12 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_12 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_11 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_11 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_11 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_10 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_10 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_10 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_9 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_9 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_9 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_8 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_8 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_8 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_temp_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_A_act_power_7 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
+ SG_ Motor_A_act_voltage_7 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
+ SG_ Inverter_A_act_module_temp_7 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Inverter_B_Statusword_5 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_B_Statusword_4 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_B_Statusword_3 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPERATURE_WARNING : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_OVERTEMPERATURE : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STATOR_FREQ_TO_HIGH : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SUPPLYVOLTAGE_ERROR : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPDO_TIMEOUT : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NMT_NOT_OPERATIONAL : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TASKOVERRUN : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NETSYNC_ERROR : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_LOW : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POSDEVICE_SIGNAL_TO_HIGH : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RESOLVER_CALIBRATION_FAILED : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SYSTEM_FAULT : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTERLOCK_OPEN : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ APPC_HAS_GATE_DRIVER_DISABLED : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_STALL_ERROR : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPERATURE_WARNING : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_OVERTEMPERATURE : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMBIENT_TEMPSENSOR_ERROR : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CLAMPING_TIMEOUT : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_RIPPLE_TO_HIGH : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_WARNING : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_I2XT_ERROR : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_FIELDWEAKENING_ERROR : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INVALID_PARAMETER_COMBINATION : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PLUG_COVER_SENSOR_SIGNAL_LOW : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_CONNECTION_TEST_FAILED : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_WARNING : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISOLATION_FAULT : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverter_B_Statusword_2 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EVENTBUFFER_NEW_EVENT : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EVENTBUFFER_OVERFLOW : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TRIPZONE_OVERCURRE : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_CURRENT_OFFSET_INI : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPSENSOR_ERROR : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_TEMPERATURE_WARNIN : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_OVERTEMPERATURE : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_IXT_FAULT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_SW_OVERCURRENT : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ POWERMODULE_PATTERNDATA_INCONS : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_TRIPZONE_OVERVOLTAGE : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_OVERVOLTAGE : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Ve
  SG_ DCBUS_SW_UNDERVOLTAGE : 28|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ NEIGHBOUR_FAULT : 29|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ MOTOR_TEMPSENSOR_ERROR : 30|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -1266,54 +2064,54 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ Motor_B_act_velocity_7 : 0|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
  SG_ Motor_B_act_torque_7 : 32|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
  SG_ Motor_B_act_current_7 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
- SG_ Motor_B_act_temp_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Motor_B_act_temp_5 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_5 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_5 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_5 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_5 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_4 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_4 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_4 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_4 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_4 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_3 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_3 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_3 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_3 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_3 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_2 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_2 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_2 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_2 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_2 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_1 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_1 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_1 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_1 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_1 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_13 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_13 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_13 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_13 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_13 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_12 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_12 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_12 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_12 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_12 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_11 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_11 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_11 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_11 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_11 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_10 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_10 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_10 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_10 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_10 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_9 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_9 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_9 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_9 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_9 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_8 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_8 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_8 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_8 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
- SG_ Motor_B_act_temp_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_8 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
+ SG_ Motor_B_act_temp_7 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_7 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_7 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_7 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_7 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Inverter_A_Controlword_5 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ Motor_A_target_velocity_5 : 16|32@1- (6.103515625e-05,0) [-131072|131071.99994] "rpm" Vector__XXX
  SG_ Motor_A_target_torque_5 : 48|16@1- (0.1,0) [-3276.8|3276.7] "%" Vector__XXX
@@ -1499,12 +2297,12 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
 
 BO_ 398 TxPDO_DeviceActual_14: 8 Inverters
  SG_ Device_dc_link_vol_14 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_14 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_14 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_14 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
 
 BO_ 390 TxPDO_DeviceActual_6: 8 Inverters
  SG_ Device_dc_link_vol_6 : 0|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Device_ambient_temp_6 : 16|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Device_ambient_temp_6 : 16|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Device_dc_link_power_6 : 32|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
 
 BO_ 462 TxPDO_InverterAStatus_14: 8 Inverters
@@ -1610,16 +2408,16 @@ BO_ 582 TxPDO_MotorAActual1_6: 8 Inverters
  SG_ Motor_A_act_current_6 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
 
 BO_ 654 TxPDO_MotorAActual2_14: 8 Inverters
- SG_ Motor_A_act_temp_14 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Motor_A_act_temp_14 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_14 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_14 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_14 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_14 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
 
 BO_ 646 TxPDO_MotorAActual2_6: 8 Inverters
- SG_ Motor_A_act_temp_6 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Motor_A_act_temp_6 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_A_act_power_6 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_A_act_voltage_6 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_A_act_module_temp_6 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_A_act_module_temp_6 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
 
 BO_ 718 TxPDO_InverterBStatus_14: 8 Inverters
  SG_ Inverter_B_Statusword_14 : 0|7@1+ (1,0) [0|127] "" Vector__XXX
@@ -1724,16 +2522,16 @@ BO_ 838 TxPDO_MotorBActual1_6: 8 Inverters
  SG_ Motor_B_act_current_6 : 48|16@1- (0.015625,0) [-512|511.984375] "A" Vector__XXX
 
 BO_ 910 TxPDO_MotorBActual2_14: 8 Inverters
- SG_ Motor_B_act_temp_14 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Motor_B_act_temp_14 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_14 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_14 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_14 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_14 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
 
 BO_ 902 TxPDO_MotorBActual2_6: 8 Inverters
- SG_ Motor_B_act_temp_6 : 0|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Motor_B_act_temp_6 : 0|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
  SG_ Motor_B_act_power_6 : 16|16@1- (0.016,0) [-524.288|524.272] "kW" Vector__XXX
  SG_ Motor_B_act_voltage_6 : 32|16@1- (0.0625,0) [-2048|2047.9375] "V" Vector__XXX
- SG_ Inverter_B_act_module_temp_6 : 48|16@1- (0.0625,0) [-2048|2047.9375] "°C" Vector__XXX
+ SG_ Inverter_B_act_module_temp_6 : 48|16@1- (0.0625,0) [-2048|2047.9375] "ï¿½C" Vector__XXX
 
 BO_ 0 NMT: 2 Inverters
  SG_ commmand_specifier : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -1924,7 +2722,7 @@ BO_ 1317 IVT_Msg_Result_T: 6 IVT_Mod
  SG_ IVT_Result_T_Measurement_Error : 14|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ IVT_Result_T_Channel_Error : 13|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ IVT_ID_Result_T : 7|8@0+ (1,0) [4|4] "" Vector__XXX
- SG_ IVT_Result_T : 23|32@0- (0.1,0) [-2147483648|2147483647] "°C" Vector__XXX
+ SG_ IVT_Result_T : 23|32@0- (0.1,0) [-2147483648|2147483647] "ï¿½C" Vector__XXX
  SG_ IVT_MsgCount_Result_T : 11|4@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1316 IVT_Msg_Result_U3: 6 IVT_Mod

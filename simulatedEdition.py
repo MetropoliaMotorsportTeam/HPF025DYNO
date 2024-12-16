@@ -1,6 +1,5 @@
 import tkinter as tk
 import cantools
-import can
 import random
 import threading
 import time
@@ -19,8 +18,8 @@ class DynoDashboardApp:
         self.message_count = 0
         self.log_queue = queue.Queue()
         try:
-            self.sensor_dbc = cantools.database.load_file("can1_HPF24.dbc")
-            self.critical_dbc = cantools.database.load_file("can2-HPF24.dbc")
+            self.sensor_dbc = cantools.database.load_file("./dbcbackupedited/can1_HPF24.dbc")
+            self.critical_dbc = cantools.database.load_file("./dbcbackupedited/can2-HPF24.dbc")
             print("Both DBC files loaded successfully.")
             self.print_dbc_signals()
         except cantools.database.UnsupportedDatabaseFormatError as e:
@@ -30,13 +29,12 @@ class DynoDashboardApp:
             messagebox.showerror("Error", f"Error loading DBC file: {e}")
             self.root.quit()
 
-        # Initialize CAN bus
-        try:
-            self.bus = can.interface.Bus(channel='vcan0', interface='virtual')
-        except can.CanError as e:
-            print(f"Error initializing CAN bus: {e}")
-            messagebox.showerror("Error", f"Error initializing CAN bus: {e}")
-            self.root.quit()
+        # Instead of using real CAN bus, we'll simulate the CAN data
+        self.valid_message_ids = set()
+        if self.sensor_dbc:
+            self.valid_message_ids.update(msg.frame_id for msg in self.sensor_dbc.messages)
+        if self.critical_dbc:
+            self.valid_message_ids.update(msg.frame_id for msg in self.critical_dbc.messages)
 
         # Connect to InfluxDB
         try:
@@ -54,10 +52,6 @@ class DynoDashboardApp:
 
         # Set up the UI
         self.setup_ui()
-        # Add message IDs from both DBC files
-        self.sensor_message_ids = [590, 582, 654, 646, 846, 838]  # Select few messages from sensor DBC
-        self.critical_message_ids = [910, 902]  # All critical messages
-        self.target_message_ids = self.sensor_message_ids + self.critical_message_ids
 
     def print_dbc_signals(self):
         if self.sensor_dbc:
@@ -104,13 +98,13 @@ class DynoDashboardApp:
                                      bg="#F44336", fg="white", relief="raised", width=12, state=tk.DISABLED)
         self.stop_button.pack(side=tk.LEFT, padx=10, expand=True)
 
-        self.status_label = tk.Label(frame, text="Status: Idle", font=("Arial", 12), bg="#f4f4f9", fg="red")  # Red for idle
+        self.status_label = tk.Label(frame, text="Status: Idle", font=("Arial", 12), bg="#f4f4f9", fg="red")
         self.status_label.pack(pady=10)
 
     def start_logging(self):
         self.start_button.config(state=tk.DISABLED)
         self.stop_button.config(state=tk.NORMAL)
-        self.status_label.config(text="Status: Logging", fg="green")  # Green for logging
+        self.status_label.config(text="Status: Logging", fg="green")
 
         self.is_running = True
         self.message_count = 0
@@ -120,51 +114,51 @@ class DynoDashboardApp:
     def stop_logging(self):
         self.start_button.config(state=tk.NORMAL)
         self.stop_button.config(state=tk.DISABLED)
-        self.status_label.config(text="Status: Idle", fg="red")  # Red for idle
+        self.status_label.config(text="Status: Idle", fg="red")
         self.is_running = False
 
     def simulate_can_data(self):
         batch_data = []  # To accumulate data for batch writing
 
         while self.is_running:
-            for message_id in self.target_message_ids:
-                data = [random.randint(0, 255) for _ in range(8)]
-                decoded_data = self.decode_can_message(message_id, data)
-                if decoded_data:
-                    self.log_queue.put(f"Decoded data for message ID {message_id}: {decoded_data}")
-                    batch_data.append((message_id, decoded_data))
+            # Simulate a CAN message with a random message ID and random data
+            message_id = random.choice(list(self.valid_message_ids))  # Pick a random valid message ID
+            data = [random.randint(0, 255) for _ in range(8)]  # Generate 8 random bytes for the message data
 
+            # Process the simulated message
+            decoded_data = self.decode_can_message(message_id, data)
+            if decoded_data:
+                self.log_queue.put(f"Decoded data for message ID {message_id}: {decoded_data}")
+                batch_data.append((message_id, decoded_data))
+
+            # Write to InfluxDB if we have data
             if batch_data:
-                self.write_to_influxdb(batch_data)  # Write in batch every cycle
+                self.write_to_influxdb(batch_data)
                 batch_data.clear()
 
-            self.message_count += len(self.target_message_ids)
+            self.message_count += 1
             self.update_status(self.message_count)
-            time.sleep(0.1)  # Reduced sleep time to 100ms for 1 Mbps CAN bus
+
+            # Sleep for a while before generating the next simulated message
+            time.sleep(0.1)  # Simulate message generation every 100ms
 
     def decode_can_message(self, message_id, data):
         decoded_signals = {}
 
-        if self.sensor_dbc:
-            try:
-                message = self.sensor_dbc.get_message_by_frame_id(message_id)
-                if message:
+        # Attempt to decode using both DBC files
+        for dbc in [self.sensor_dbc, self.critical_dbc]:
+            if dbc:
+                try:
+                    message = dbc.get_message_by_frame_id(message_id)
                     raw_data = bytes(data)
                     decoded_data = message.decode(raw_data)
                     decoded_signals.update(decoded_data)
-            except KeyError:
-                pass
+                    break  # Stop after successful decoding
+                except KeyError:
+                    continue  # Message ID not in this DBC
 
-        if self.critical_dbc:
-            try:
-                message = self.critical_dbc.get_message_by_frame_id(message_id)
-                if message:
-                    raw_data = bytes(data)
-                    decoded_data = message.decode(raw_data)
-                    decoded_signals.update(decoded_data)
-            except KeyError:
-                pass
-
+        if not decoded_signals:
+            self.log_queue.put(f"Unknown message ID {message_id}, skipping.")
         return decoded_signals
 
     def write_to_influxdb(self, batch_data):
@@ -202,6 +196,7 @@ class DynoDashboardApp:
 
     def update_status(self, message_count):
         self.status_label.config(text=f"Status: Logging ({message_count} messages)", fg="green")
+
 
 if __name__ == "__main__":
     root = tk.Tk()
