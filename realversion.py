@@ -10,18 +10,7 @@ from influxdb_client import InfluxDBClient, Point, WritePrecision
 import queue
 
 
-##INSTALL ALL LIBRARIES, KVASER SDK AND INFLUXDB. 
-
-##1 INFLUXDB (Windows) -> wget https://download.influxdata.com/influxdb/releases/influxdb2-2.7.11-windows.zip -UseBasicParsing -OutFile influxdb2-2.7.11-windows.zip
-#Expand-Archive .\influxdb2-2.7.11-windows.zip -DestinationPath 'C:\Program Files\InfluxData\influxdb\'
-
-##2 INFLUXD -> CD TO INSTALL LOCATION AND THEN INFLUXD TO RUN
-##3 SETUP CORRECT INFLUXDB CRED AND TEST WITH CANKING
-
-##CAN2 DBC ERROR, SIGNAL DOESNT FIT BTN1
-
-
-##MESSAGE2, CAN2 DBC FILE IS NOT USED NOW SINCE WE ARE TESTING WITH 1 DBC FILE. (SENSOR)
+##TODO REMOVE INFLUXDB 
 
 
 class DynoLogger:
@@ -33,6 +22,7 @@ class DynoLogger:
         self.is_running = False
         self.message_count = 0
         self.log_queue = queue.Queue()
+        self.data_dict = {}
 
         try:
             self.sensor_dbc = cantools.database.load_file("can1_HPF24.dbc")
@@ -46,25 +36,20 @@ class DynoLogger:
             messagebox.showerror("Error", f"Error loading DBC file: {e}")
             self.root.quit()
 
-
-
- 
         try:
-            self.bus1 = can.interface.Bus(channel=0, interface='kvaser', bitrate=1000000)   # Sensor CAN bus using Kvaser device
-            ##self.bus2 = can.interface.Bus(channel=1, interface='kvaser')  # Critical CAN bus using Kvaser device
+            self.bus1 = can.interface.Bus(channel=0, interface='kvaser', bitrate=1000000)  # Sensor CAN bus
         except can.CanError as e:
             print(f"Error initializing Kvaser CAN bus: {e}")
             messagebox.showerror("Error", f"Error initializing CAN bus: {e}")
             self.root.quit()
 
-        # Connect to database (ensure correct info is used) otherwise it wont work
+        # Connect to InfluxDB (make sure correct credentials are used) NOT USED ANYMORE DELETE SOON
         try:
             self.influxdb_client = InfluxDBClient(
                 url="http://localhost:8086",
-                token="tAapBTbBavsk8E_exG4t1BJyp0FefDkfty8XzBAVo-l41w8g4892Z06rv-fyeDggab2BI4C_dqhv42qMKCUHYA==",
-                org="motorsport"
+                token="your-token-here",
+                org="your-org-here"
             )
-            ##MAKE SURE YOU SET THIS TO THE CORRECT BUCKET.
             self.bucket = "withoutui"
             print("Connected to InfluxDB successfully.")
         except Exception as e:
@@ -79,7 +64,6 @@ class DynoLogger:
         if self.critical_dbc:
             self.valid_message_ids.update(msg.frame_id for msg in self.critical_dbc.messages)
 
-        # Set up the UI
         self.setup_ui()
 
     def print_dbc_signals(self):
@@ -97,7 +81,6 @@ class DynoLogger:
                 for signal in message.signals:
                     print(f"  Signal Name: {signal.name}, Start Bit: {signal.start}, Length: {signal.length}")
 
-    ##UI 
     def setup_ui(self):
         frame = tk.Frame(self.root, bg="#f4f4f9")
         frame.pack(padx=20, pady=20, fill=tk.BOTH, expand=True)
@@ -131,9 +114,6 @@ class DynoLogger:
         self.status_label = tk.Label(frame, text="Status: Idle", font=("Arial", 12), bg="#f4f4f9", fg="red")
         self.status_label.pack(pady=10)
 
-
-
-    ##BUTTONS
     def start_logging(self):
         self.start_button.config(state=tk.DISABLED)
         self.stop_button.config(state=tk.NORMAL)
@@ -141,147 +121,99 @@ class DynoLogger:
 
         self.is_running = True
         self.message_count = 0
-        threading.Thread(target=self.read_can_data, daemon=True).start() 
-        ##threading.Thread(target=self.update_log, daemon=True).start()  
+        threading.Thread(target=self.read_can_data, daemon=True).start()
 
     def stop_logging(self):
         self.start_button.config(state=tk.NORMAL)
         self.stop_button.config(state=tk.DISABLED)
         self.status_label.config(text="Status: Idle", fg="red")
         self.is_running = False
-
-
-
+        self.save_data_to_csv()
 
     def read_can_data(self):
-        batch_data = []  # To accumulate data for batch writing
-
         while self.is_running:
-            # Read a message from the Kvaser CAN bus (can1 and can2)
-            message1 = self.bus1.recv()  # Sensor CAN bus message
-            #message2 = self.bus2.recv()  # Critical CAN bus message
+            message1 = self.bus1.recv()  # Read from Sensor CAN bus
 
             if message1:
                 decoded_data1 = self.decode_can_message(message1.arbitration_id, message1.data)
                 if decoded_data1:
-                    self.log_queue.put(f"Decoded data for message ID {message1.arbitration_id}: {decoded_data1}")
-                    batch_data.append((message1.arbitration_id, decoded_data1))
+                    # Store data in dictionary
+                    self.store_data_in_dict(message1.arbitration_id, decoded_data1)
 
-            #if message2:
-                #decoded_data2 = self.decode_can_message(message2.arbitration_id, message2.data)
-                #if decoded_data2:
-                    #self.log_queue.put(f"Decoded data for message ID {message2.arbitration_id}: {decoded_data2}")
-                    #batch_data.append((message2.arbitration_id, decoded_data2))
+            time.sleep(0.1)
 
-            # Write to InfluxDB if we have data
-            if batch_data:
-                ##self.write_to_influxdb(batch_data)
-                self.write_to_csv(batch_data)
-                batch_data.clear()
-
-            self.message_count += 1
-            self.update_status(self.message_count)
-
-            time.sleep(0.1)  
-
-
-
-    ##TEST
     def decode_can_message(self, message_id, data):
         decoded_signals = {}
-        # Attempt to decode using both DBC files
         for dbc in [self.sensor_dbc, self.critical_dbc]:
             if dbc:
                 try:
                     message = dbc.get_message_by_frame_id(message_id)
+                  
                     raw_data = bytes(data)
-
-
-                    ##CHECK raw_data
-                    print(raw_data, message_id)
-
-
+                    print("Message and id: ", message, ":", message_id,  "Raw data: ", raw_data)
                     decoded_data = message.decode(raw_data)
                     decoded_signals.update(decoded_data)
-                    break  # Stop after successful decoding
+                    break
                 except KeyError:
-                    continue  # Message ID not in this DBC
-
-        if not decoded_signals:
-            self.log_queue.put(f"Unknown message ID {message_id}, skipping.")
+                    continue
         return decoded_signals
-    
 
 
 
-    def write_to_influxdb(self, batch_data):
+
+
+
+    ##STORE TO CSV FILE
+    def store_data_in_dict(self, message_id, decoded_data):
+        timestamp = datetime.now().isoformat()  
+        for signal_name, signal_value in decoded_data.items():
+            key = f"{message_id}:{signal_name}"
+            if key not in self.data_dict:
+                self.data_dict[key] = []  
+            self.data_dict[key].append({"value": signal_value, "timestamp": timestamp})  
+            
+    def save_data_to_csv(self):
         try:
-            with self.influxdb_client.write_api() as write_api:
-                for message_id, decoded_data in batch_data:
-                    for signal_name, signal_value in decoded_data.items():
-                        point = Point("can_signals") \
-                            .tag("message_id", message_id) \
-                            .field(signal_name, signal_value) \
-                            .time(time.time_ns(), WritePrecision.NS)
-                        
-
-                        ##THIS NEEDS TO BE THE CORRECT ORG OTHERWISE IT WONT WORK
-                        write_api.write(bucket=self.bucket, org="motorsport", record=point)
-
-
-                self.log_queue.put("Batch write to InfluxDB successful.")
-        except Exception as e:
-            self.log_queue.put(f"Error writing to InfluxDB: {e}")
-
-
-    def write_to_csv(self, batch_data):
-        try:
-            with open('signals.csv', mode='a', newline='') as file:
+            with open('signals.csv', mode='w', newline='') as file:
                 writer = csv.writer(file)
 
-                if file.tell() == 0:
-                    # Header for the CSV file
-                    header = ["id", "signal_name", "signal_value", "timestamp"]
-                    writer.writerow(header)
-
-                for message_id, decoded_data in batch_data:
-                    for signal_name, signal_value in decoded_data.items():
-                        # Prepare the row to be written with a human-readable timestamp
-                        timestamp = datetime.now().isoformat()
-                        row = [message_id, signal_name, signal_value, timestamp]
-                        writer.writerow(row)
-
-                self.log_queue.put("Batch write to CSV successful.")
-        except Exception as e:
-            error_message = f"Error writing to CSV: {e}"
-            self.log_queue.put(error_message)
-            print(error_message)
-
-
-
-
-    def log(self, message, level="INFO"):
-        self.log_queue.put(f"[{level}] {message}\n")
         
+                header = list(self.data_dict.keys())
+                print(f"Header: {header}")  # Debug print to see the columns
 
-    #def update_log(self):
-        #while self.is_running:
-            #try:
-                #message = self.log_queue.get(timeout=1)
-                #self.update_log_text(message)
-            #except queue.Empty:
-                #continue
+             
+                writer.writerow(header)
+                print(f"Header written to CSV.")  # Confirm header is written
 
-    #def update_log_text(self, message):
-        #self.log_text.config(state=tk.NORMAL)
-        #self.log_text.insert(tk.END, message)
-        #if len(self.log_text.get("1.0", tk.END).splitlines()) > 1000:
-            #self.log_text.delete("1.0", "2.0")
-        #self.log_text.yview(tk.END)
-        #self.log_text.config(state=tk.DISABLED)
+            
+                rows = []
+                max_rows = max(len(values) for values in self.data_dict.values())  # Get the maximum row length
 
-    def update_status(self, message_count):
-        self.status_label.config(text=f"Status: Logging ({message_count} messages)", fg="green")
+        
+                print(f"Max rows: {max_rows}")
+
+              
+                for i in range(max_rows):
+                    row = []  
+                    for key in header:
+                        try:
+                        
+                            value_time = self.data_dict[key][i]
+                            value_timestamp = f"{value_time['value']}:{value_time['timestamp']}"
+                            row.append(value_timestamp)
+                        except IndexError:
+                        
+                            row.append("")
+                    rows.append(row)
+
+           
+                writer.writerows(rows)
+                print(f"Rows written to CSV: {rows}")  
+
+            print("Data saved to CSV successfully.")  
+        except Exception as e:
+            print(f"Error saving data to CSV: {e}")  
+
 
 if __name__ == "__main__":
     root = tk.Tk()
