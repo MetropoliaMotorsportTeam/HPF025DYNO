@@ -4,7 +4,6 @@ import matplotlib.dates as mdates
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-
 # Function to load CSV
 def load_csv():
     file_path = filedialog.askopenfilename(title="Select CSV File", filetypes=[("CSV files", "*.csv")])
@@ -18,9 +17,6 @@ def load_csv():
     except Exception as e:
         messagebox.showerror("Error", f"Could not load file:\n{e}")
         return None
-
-
-
 
 # Load CSV
 df = load_csv()
@@ -44,10 +40,6 @@ listbox.pack(padx=10, pady=5, fill=tk.BOTH, expand=True)
 for col in df.columns:
     listbox.insert(tk.END, col)
 
-
-
-
-
 # Function to extract value and timestamp
 def split_value_timestamp(column):
     """
@@ -57,19 +49,11 @@ def split_value_timestamp(column):
     try:
         split_data = df[column].astype(str).str.split(":", n=1, expand=True)
         values = pd.to_numeric(split_data[0], errors="coerce")  # First part is the value
-        timestamps = pd.to_datetime(split_data[1], errors="coerce")  # Second part is the timestamp
+        timestamps = pd.to_datetime(split_data[1], errors="coerce", format='%Y-%m-%d %H:%M:%S.%f')  # Include ms
         return values, timestamps
     except Exception as e:
         messagebox.showerror("Error", f"Failed to process {column}: {e}")
         return None, None
-    
-
-
-
-
-
-
-
 
 # Function to plot selected columns with interactive zooming/panning
 def plot_selected():
@@ -97,7 +81,7 @@ def plot_selected():
 
     # Formatting the X-axis for better readability
     ax.xaxis.set_major_locator(mdates.AutoDateLocator())  # Auto spacing for dates
-    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d %H:%M"))  # Format time labels
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d %H:%M:%S.%f"))  # Format with ms
     plt.xticks(rotation=45)  # Rotate x-axis labels for better visibility
 
     # Enable Grid, Title, and Legend
