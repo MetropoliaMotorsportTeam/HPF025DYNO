@@ -10,7 +10,9 @@ def load_csv():
     if not file_path:
         return None
     try:
-        df = pd.read_csv(file_path, delimiter=';', decimal=',')  # Ensure semicolon delimiter for consistency
+        ##df = pd.read_csv(file_path, delimiter=';', decimal=',')  # Ensure semicolon delimiter for consistency
+        df = pd.read_csv(file_path, delimiter=';', decimal='.')
+
         print(df.head())  # Debug: Print first few rows
         print("Columns detected:", df.columns.tolist())  # Debug: Show column names
         return df
@@ -49,7 +51,11 @@ def split_value_timestamp(column):
     try:
         split_data = df[column].astype(str).str.split(":", n=1, expand=True)
         values = pd.to_numeric(split_data[0], errors="coerce")  # First part is the value
-        timestamps = pd.to_datetime(split_data[1], errors="coerce", format='%Y-%m-%d %H:%M:%S.%f', exact=False)  # Handle missing ms
+        
+        ##timestamps = pd.to_datetime(split_data[1], errors="coerce", format='%Y-%m-%d %H:%M:%S.%f', exact=False)  # Handle missing ms
+        timestamps = pd.to_datetime(split_data[1], errors="coerce")
+
+        
         return values, timestamps
     except Exception as e:
         messagebox.showerror("Error", f"Failed to process {column}: {e}")
