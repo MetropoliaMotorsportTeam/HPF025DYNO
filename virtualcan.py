@@ -4,7 +4,7 @@ import random
 import time
 
 # Load the DBC file
-DBC_FILE = "your_dbc_file.dbc"  # Change this to your actual DBC file
+DBC_FILE = "your_dbc_file.dbc"  # Replace with your actual DBC file
 db = cantools.database.load_file(DBC_FILE)
 
 # List available messages
@@ -31,13 +31,13 @@ if sig_name not in [s.name for s in message.signals]:
     print("Error: Signal not found in selected message.")
     exit(1)
 
-# Prepare default values for all signals
-default_values = {sig.name: 0 for sig in message.signals}  # Initialize all to zero
+# Initialize all signals with default values
+default_values = {sig.name: 0 for sig in message.signals}
 
 # Setup CAN bus
 bus = can.interface.Bus(channel="vcan0", interface="socketcan")
 
-print("\nSending random values for signal:", sig_name)
+print("\n🔁 Sending random values for signal:", sig_name)
 print("Press CTRL+C to stop.\n")
 
 try:
@@ -48,18 +48,20 @@ try:
         max_val = signal_obj.maximum if signal_obj.maximum is not None else 100
         random_value = random.randint(int(min_val), int(max_val))
 
-        # Update only the selected signal, keep others as default (0)
+        # Update only the selected signal, keep others as default
         default_values[sig_name] = random_value
 
         # Encode the CAN message
-        encoded_data = message.encode(default_values)
-        msg = can.Message(arbitration_id=message.frame_id, data=encoded_data, is_extended_id=False)
+        data = message.encode(default_values)
 
-        # Send message
-        bus.send(msg)
-        print(f"Sent: {sig_name} = {random_value}")
+        # Send the CAN message
+        can_msg = can.Message(arbitration_id=message.frame_id, data=data, is_extended_id=False)
+        bus.send(can_msg)
+
+        print(f"📡 Sent: {sig_name} = {random_value}")
 
         time.sleep(1)  # Send every second
+
 except KeyboardInterrupt:
-    print("\nStopped sending messages.")
+    print("\n🚪 Stopping message transmission.")
 
