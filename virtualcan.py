@@ -31,6 +31,9 @@ if sig_name not in [s.name for s in message.signals]:
     print("Error: Signal not found in selected message.")
     exit(1)
 
+# Prepare default values for all signals
+default_values = {sig.name: 0 for sig in message.signals}  # Initialize all to zero
+
 # Setup CAN bus
 bus = can.interface.Bus(channel="vcan0", interface="socketcan")
 
@@ -39,14 +42,17 @@ print("Press CTRL+C to stop.\n")
 
 try:
     while True:
-        # Generate random value within allowed range
+        # Generate a random value for the selected signal
         signal_obj = next(s for s in message.signals if s.name == sig_name)
         min_val = signal_obj.minimum if signal_obj.minimum is not None else 0
         max_val = signal_obj.maximum if signal_obj.maximum is not None else 100
         random_value = random.randint(int(min_val), int(max_val))
 
-        # Encode data
-        encoded_data = message.encode({sig_name: random_value})
+        # Update only the selected signal, keep others as default (0)
+        default_values[sig_name] = random_value
+
+        # Encode the CAN message
+        encoded_data = message.encode(default_values)
         msg = can.Message(arbitration_id=message.frame_id, data=encoded_data, is_extended_id=False)
 
         # Send message
@@ -56,3 +62,4 @@ try:
         time.sleep(1)  # Send every second
 except KeyboardInterrupt:
     print("\nStopped sending messages.")
+
