@@ -2,6 +2,7 @@ import can
 import cantools
 import random
 import time
+import struct
 
 # Load the DBC file
 DBC_FILE = "your_dbc_file.dbc"  # Replace with your actual DBC file
@@ -26,12 +27,18 @@ try:
         # Generate random values for all signals in the message
         signal_values = {}
         for signal in message.signals:
-            min_val = int(signal.minimum) if signal.minimum is not None else 0
-            max_val = int(signal.maximum) if signal.maximum is not None else (2**signal.length - 1)
+            min_val = int(signal.minimum) if signal.minimum is not None else -(2**(signal.length - 1))
+            max_val = int(signal.maximum) if signal.maximum is not None else (2**(signal.length - 1)) - 1
             signal_values[signal.name] = random.randint(min_val, max_val)
         
         # Encode the CAN message
-        data = message.encode(signal_values)
+        try:
+            data = message.encode(signal_values)
+            if len(data) > 8:
+                raise ValueError("Encoded data exceeds 8-byte CAN frame limit")
+        except (ValueError, struct.error) as e:
+            print(f"⚠️ Encoding error for {message.name}: {e}")
+            continue
         
         # Send the CAN message
         can_msg = can.Message(arbitration_id=message.frame_id, data=data, is_extended_id=False)
