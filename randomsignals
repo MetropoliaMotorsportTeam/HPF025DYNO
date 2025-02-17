@@ -4,7 +4,7 @@ import random
 import time
 
 # Load the DBC file
-DBC_FILE = "can1_HPF24.dbc"  # Replace with your actual DBC file
+DBC_FILE = "your_dbc_file.dbc"  # Replace with your actual DBC file
 db = cantools.database.load_file(DBC_FILE)
 
 # Setup CAN bus
@@ -26,9 +26,9 @@ try:
         # Generate random values for all signals in the message
         signal_values = {}
         for signal in message.signals:
-            min_val = signal.minimum if signal.minimum is not None else 0
-            max_val = signal.maximum if signal.maximum is not None else 100
-            signal_values[signal.name] = random.randint(int(min_val), int(max_val))
+            min_val = int(signal.minimum) if signal.minimum is not None else 0
+            max_val = int(signal.maximum) if signal.maximum is not None else (2**signal.length - 1)
+            signal_values[signal.name] = random.randint(min_val, max_val)
         
         # Encode the CAN message
         data = message.encode(signal_values)
