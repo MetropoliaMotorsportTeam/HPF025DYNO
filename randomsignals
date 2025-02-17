@@ -1,0 +1,46 @@
+import can
+import cantools
+import random
+import time
+
+# Load the DBC file
+DBC_FILE = "can1_HPF24.dbc"  # Replace with your actual DBC file
+db = cantools.database.load_file(DBC_FILE)
+
+# Setup CAN bus
+bus = can.interface.Bus(channel="vcan0", interface="socketcan")
+
+# Calculate message interval based on 1 Mbps bitrate (approximate estimation)
+# Assuming an average CAN frame size of 128 bits (including headers and data)
+# This gives roughly 1,000,000 / 128 = 7812 messages per second
+interval = 1 / 7812  # ~0.000128 seconds per message
+
+print("\n🚀 Sending random CAN messages continuously at 1 Mbps speed.")
+print("Press CTRL+C to stop.\n")
+
+try:
+    while True:
+        # Select a random message from the DBC
+        message = random.choice(db.messages)
+        
+        # Generate random values for all signals in the message
+        signal_values = {}
+        for signal in message.signals:
+            min_val = signal.minimum if signal.minimum is not None else 0
+            max_val = signal.maximum if signal.maximum is not None else 100
+            signal_values[signal.name] = random.randint(int(min_val), int(max_val))
+        
+        # Encode the CAN message
+        data = message.encode(signal_values)
+        
+        # Send the CAN message
+        can_msg = can.Message(arbitration_id=message.frame_id, data=data, is_extended_id=False)
+        bus.send(can_msg)
+        
+        print(f"📡 Sent: {message.name} {signal_values}")
+        
+        # Maintain the rate close to 1 Mbps
+        time.sleep(interval)
+
+except KeyboardInterrupt:
+    print("\n🚪 Stopping message transmission.")
