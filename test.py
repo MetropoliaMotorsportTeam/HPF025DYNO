@@ -60,27 +60,19 @@ class DynoLogger:
             return None
 
     def start_logging(self):
-    selected_indices = self.listbox.curselection()
-    self.selected_columns = [self.listbox.get(i) for i in selected_indices]
-
-    if not self.selected_columns:
-        messagebox.showwarning("No Selection", "Please select at least one signal to start logging.")
-        return
-
-    self.start_button.config(state=tk.DISABLED)
-    self.stop_button.config(state=tk.NORMAL)
-    self.is_running = True
-
-    self.threads = []
-    if self.bus1:
-        t1 = threading.Thread(target=self.read_can_data, args=(self.bus1,), daemon=True)
-        self.threads.append(t1)
-        t1.start()
-    if self.bus2:
-        t2 = threading.Thread(target=self.read_can_data, args=(self.bus2,), daemon=True)
-        self.threads.append(t2)
-        t2.start()
-
+        self.start_button.config(state=tk.DISABLED)
+        self.stop_button.config(state=tk.NORMAL)
+        self.is_running = True
+        
+        self.threads = []
+        if self.bus1:
+            t1 = threading.Thread(target=self.read_can_data, args=(self.bus1,), daemon=True)
+            self.threads.append(t1)
+            t1.start()
+        if self.bus2:
+            t2 = threading.Thread(target=self.read_can_data, args=(self.bus2,), daemon=True)
+            self.threads.append(t2)
+            t2.start()
 
     def stop_logging(self):
         self.start_button.config(state=tk.NORMAL)
@@ -91,17 +83,15 @@ class DynoLogger:
         self.save_data_to_csv()
 
     def read_can_data(self, bus):
-    while self.is_running:
-        message = bus.recv(timeout=0.1)
-        if message:
-            decoded_data = self.decode_can_message(message.arbitration_id, message.data)
-            if decoded_data:
-                timestamp = time.perf_counter() * 1000
-                for signal_name in decoded_data.keys():
-                    key = f"{message.arbitration_id}:{signal_name}"
-                    if key in self.selected_columns:  # ✅ Only store selected signals
-                        self.log_queue.put((key, decoded_data[signal_name], timestamp))
-
+        while self.is_running:
+            message = bus.recv(timeout=0.1)
+            if message:
+                raw_data_hex = message.data.hex()
+                decoded_data = self.decode_can_message(message.arbitration_id, message.data)
+                print(f"RAW DATA: ID={message.arbitration_id} DATA={raw_data_hex}")
+                if decoded_data:
+                    timestamp = time.perf_counter() * 1000
+                    self.log_queue.put((message.arbitration_id, decoded_data, timestamp))
 
 
     def process_log_queue(self):
@@ -141,36 +131,36 @@ class DynoLogger:
 
 
     ##Probably needs fixing
-    def save_data_to_csv(self):
-                try:
-                    with open('signals.csv', mode='w', newline='') as file:
-                        writer = csv.writer(file)
+   def save_data_to_csv(self):
+    if not self.selected_columns:
+        messagebox.showwarning("No Selection", "Please select at least one signal before saving.")
+        return
 
-                        header = list(self.data_dict.keys())
-                        print(f"Header: {header}")  
+    try:
+        with open('plotted_signals.csv', mode='w', newline='') as file:
+            writer = csv.writer(file)
 
-                        writer.writerow(header)
-                        print(f"Header written to CSV.")  
-                        rows = []
-                        max_rows = max(len(values) for values in self.data_dict.values())
+            header = self.selected_columns  # ✅ Only save plotted signals
+            writer.writerow(header)
 
-                        print(f"Max rows: {max_rows}")
+            max_rows = max(len(self.data_dict[key]) for key in self.selected_columns if key in self.data_dict)
 
-                        for i in range(max_rows):
-                            row = []  
-                            for key in header:
-                                try:
-                                    value_time = self.data_dict[key][i]
-                                    value_timestamp = f"{value_time['value']}:{value_time['timestamp']}"
-                                    row.append(value_timestamp)
-                                except IndexError:
-                                    row.append("")
-                            rows.append(row)
+            for i in range(max_rows):
+                row = []
+                for key in header:
+                    try:
+                        value_time = self.data_dict[key][i]
+                        value_timestamp = f"{value_time['value']}:{value_time['timestamp']}"
+                        row.append(value_timestamp)
+                    except IndexError:
+                        row.append("")
+                writer.writerow(row)
 
-                        writer.writerows(rows)
-                        print("Data saved to CSV successfully.")
-                except Exception as e:
-                    print(f"Error saving data to CSV: {e}")
+        print("Plotted signals saved to CSV successfully.")
+
+    except Exception as e:
+        print(f"Error saving data to CSV: {e}")
+
 
 
 
@@ -217,4 +207,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = DynoLogger(root)
     root.mainloop()
+
 
