@@ -27,9 +27,18 @@ try:
         # Generate random values for all signals in the message
         signal_values = {}
         for signal in message.signals:
-            min_val = int(signal.minimum) if signal.minimum is not None else -(2**(signal.length - 1))
-            max_val = int(signal.maximum) if signal.maximum is not None else (2**(signal.length - 1)) - 1
-            signal_values[signal.name] = random.randint(min_val, max_val)
+            min_val = signal.minimum if signal.minimum is not None else 0
+            max_val = signal.maximum if signal.maximum is not None else (2**signal.length - 1)
+            
+            # Ensure value is within valid range and type
+            if signal.is_signed:
+                min_val = max(min_val, -(2**(signal.length - 1)))
+                max_val = min(max_val, (2**(signal.length - 1)) - 1)
+            else:
+                min_val = max(min_val, 0)
+                max_val = min(max_val, (2**signal.length - 1))
+            
+            signal_values[signal.name] = random.randint(int(min_val), int(max_val))
         
         # Encode the CAN message
         try:
@@ -51,3 +60,4 @@ try:
 
 except KeyboardInterrupt:
     print("\n🚪 Stopping message transmission.")
+
