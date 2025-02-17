@@ -2,61 +2,59 @@ import can
 import cantools
 import random
 import time
-import struct
 
 # Load the DBC file
 DBC_FILE = "your_dbc_file.dbc"  # Replace with your actual DBC file
 db = cantools.database.load_file(DBC_FILE)
 
-# Setup CAN bus
-bus = can.interface.Bus(channel="vcan0", interface="socketcan")
+# List available messages
+print("\nAvailable Messages:")
+for msg in db.messages:
+    print(f"- {msg.name} (ID: {hex(msg.frame_id)})")
 
-# Calculate message interval based on 1 Mbps bitrate (approximate estimation)
-# Assuming an average CAN frame size of 128 bits (including headers and data)
-# This gives roughly 1,000,000 / 128 = 7812 messages per second
-interval = 1 / 7812  # ~0.000128 seconds per message
+# User selects multiple messages
+msg_names = input("\nEnter message names to send (comma-separated): ").split(',')
+selected_messages = []
 
-print("\n🚀 Sending random CAN messages continuously at 1 Mbps speed.")
+for msg_name in msg_names:
+    msg_name = msg_name.strip()
+    try:
+        selected_messages.append(db.get_message_by_name(msg_name))
+    except KeyError:
+        print(f"Error: Message '{msg_name}' not found in DBC.")
+
+if not selected_messages:
+    print("No valid messages selected. Exiting.")
+    exit(1)
+
+# Initialize all signals with default values
+default_values = {}
+for message in selected_messages:
+    default_values[message.name] = {sig.name: 0 for sig in message.signals}
+
+# Setup CAN bus with real speed simulation
+bus = can.interface.Bus(channel="vcan0", interface="socketcan", bitrate=1000000)
+
+print("\n🔁 Sending random values for selected messages...")
 print("Press CTRL+C to stop.\n")
 
 try:
     while True:
-        # Select a random message from the DBC
-        message = random.choice(db.messages)
-        
-        # Generate random values for all signals in the message
-        signal_values = {}
-        for signal in message.signals:
-            min_val = signal.minimum if signal.minimum is not None else 0
-            max_val = signal.maximum if signal.maximum is not None else (2**signal.length - 1)
-            
-            # Ensure value is within valid range and type
-            if signal.is_signed:
-                min_val = max(min_val, -(2**(signal.length - 1)))
-                max_val = min(max_val, (2**(signal.length - 1)) - 1)
-            else:
-                min_val = max(min_val, 0)
-                max_val = min(max_val, (2**signal.length - 1))
-            
-            signal_values[signal.name] = random.randint(int(min_val), int(max_val))
-        
-        # Encode the CAN message
-        try:
-            data = message.encode(signal_values)
-            if len(data) > 8:
-                raise ValueError("Encoded data exceeds 8-byte CAN frame limit")
-        except (ValueError, struct.error) as e:
-            print(f"⚠️ Encoding error for {message.name}: {e}")
-            continue
-        
-        # Send the CAN message
-        can_msg = can.Message(arbitration_id=message.frame_id, data=data, is_extended_id=False)
-        bus.send(can_msg)
-        
-        print(f"📡 Sent: {message.name} {signal_values}")
-        
-        # Maintain the rate close to 1 Mbps
-        time.sleep(interval)
+        for message in selected_messages:
+            for sig in message.signals:
+                min_val = sig.minimum if sig.minimum is not None else 0
+                max_val = sig.maximum if sig.maximum is not None else 100
+                random_value = random.randint(int(min_val), int(max_val))
+                default_values[message.name][sig.name] = random_value
+
+            # Encode and send the CAN message
+            data = message.encode(default_values[message.name])
+            can_msg = can.Message(arbitration_id=message.frame_id, data=data, is_extended_id=False)
+            bus.send(can_msg)
+            print(f"📡 Sent: {message.name} | Data: {default_values[message.name]}")
+
+            # Simulate CAN bus timing (1 Mbps, ~1ms per 8-byte frame)
+            time.sleep(0.001)
 
 except KeyboardInterrupt:
     print("\n🚪 Stopping message transmission.")
